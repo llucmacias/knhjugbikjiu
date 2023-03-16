@@ -1,0 +1,94 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "AnimatedSprite",
+"class": "LPCSprite",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite.gd"
+}, {
+"base": "SpriteFrames",
+"class": "LPCSpriteBlueprint",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite_blueprint.gd"
+}, {
+"base": "Resource",
+"class": "LPCSpriteBlueprintLayer",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/internal/lpc_sprite_blueprint_layer.gd"
+}, {
+"base": "Sprite",
+"class": "LPCSpriteLayer",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite_layer.gd"
+}, {
+"base": "LPCSpriteLayer",
+"class": "LPCSpriteLayerOversize",
+"language": "GDScript",
+"path": "res://addons/lpc_spritesheet_gen/lpc_sprite_layer_oversize.gd"
+} ]
+_global_script_class_icons={
+"LPCSprite": "res://addons/lpc_spritesheet_gen/internal/lpc_icon.png",
+"LPCSpriteBlueprint": "res://addons/lpc_spritesheet_gen/internal/lpc_icon_spec.png",
+"LPCSpriteBlueprintLayer": "",
+"LPCSpriteLayer": "",
+"LPCSpriteLayerOversize": ""
+}
+
+[application]
+
+config/name="knhjugbikjiu"
+run/main_scene="res://Node2D.tscn"
+config/icon="res://icon.png"
+
+[gui]
+
+common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+ui_accept={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777221,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777222,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":76,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":85,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ves_dreta={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ves_esquerra={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ves_adalt={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ves_avall={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
